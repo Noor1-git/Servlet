@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  <servlet-name>animal</servlet-name>
+  <servlet-class>edu.jsp.load_on_startup.Animal</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>ball</servlet-name>
+  <servlet-class>edu.jsp.load_on_startup.Ball</servlet-class>
+  <load-on-startup>2</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>animal</servlet-name>
+  <url-pattern>/animal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  <servlet-name>ball</servlet-name>
+  <url-pattern>/ball</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
